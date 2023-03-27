@@ -1,0 +1,4 @@
+git add code.txt
+git add output.txt
+git branch -M main
+git push -u origin main 
