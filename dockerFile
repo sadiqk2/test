@@ -1,0 +1,14 @@
+#Getting image from docker hub 
+
+From ubuntu 
+Run apt-get update
+
+CMD ["echo ","Installing Apache server"]
+
+Run apt-get install apache2 -y
+
+CMD ["echo ","stating Apache server"]
+
+Run service apache2 start
+
+CMD ["echo ","Successfully loaded"]
