@@ -1,0 +1,93 @@
+git main init
+git checkout main 
+touch code.txt
+touch log.txy
+touch output.txt
+git add code.txt output.txt
+git commit -m "first commit"
+git push origin main
+
+assignment 2
+git switch -c develop
+touch develop.txt 
+git stash
+
+git switch feature1
+touch new.txt 
+git add .
+git commit -m"commit to feature 1 branch"
+
+git checkout develop 
+git stash pop 
+git add .
+git commit -m " commit to develop branch"
+git push origin develop
+
+
+Assignment 3
+git switch -c Develop
+git switch -c F1
+git switch -c f2
+
+git checkout main 
+touch main.txt 
+git add .
+git commit -m "third commit to main branch "
+git push origin main
+
+git checkout develop 
+touch develop.txt
+git push origin main
+
+git checkout f1
+touch f1.txt
+git push origin f1
+
+git checkout f2
+touch f2.txt
+git push origin f2
+git branch -D f2
+git push origin f2
+
+
+assignment 4
+git checkout main
+touch master.txt 
+git add .
+git commit -m "commit master txt file into branch"
+
+git switch -c public1
+git switch -c public2
+git switch -c private
+
+git checkout public1 
+touch public.txt 
+git commit -m "commit to public branch "
+git push origin public1
+
+git checkout master
+git pull origin master
+git merge public1
+git push origin master
+
+git checkout master
+git pull origin master
+git merge public2
+git push origin master
+
+git checkout private 
+touch master.txt 
+git commit -m "commit to private branch "
+git push origin private
+
+
+assignment 5
+git flow init
+git branch -a
+git flow feature start feature_branch
+git flow feature finish feature_branch
+git flow hotfix start '0.1.1'
+git add .
+git commit -m "A git flow hotfix from start to finish."
+git branch -a
+git flow hotfix finish '0.1.1'
